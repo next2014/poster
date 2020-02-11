@@ -1,14 +1,16 @@
-[📖中文在线文档](https://ly525.github.io/luban-h5/zh/) | [📖English Docs](https://ly525.github.io/luban-h5/en/getting-started/introduction.html) | [README(en)](./README.en.md)
-
-<h2 align="center">
- 鲁班 H5
-</h2>
-<p align="center">
-基于Vue开发，通过拖拽的形式，生成移动页面
-</p>
-<p align="center">
-Mobile Page Builder&Generator with Drag&Drop
-</p>
+---
+home: true
+actionText: Get Started →
+actionLink: /zh/getting-started/introduction
+features:
+  - title: 表单提交
+    details: 支持表单组件，即时倾听用户反馈，可以在后台查看和下载用户数据
+  - title: 轻松建站
+    details: 丰富的组件系统、支持可视化编辑、自由拖拽排版、实时预览、在线访问
+  - title: 导入 PSD
+    details: 支持一键导入PSD，将设计师的创意转换为 H5，快速查看效果、反馈、上线
+footer: GPL 3.0 Licensed | Copyright © 2019-present
+---
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Docs](https://github.com/ly525/luban-h5/workflows/docs/badge.svg)](https://ly525.github.io/luban-h5/)
@@ -72,7 +74,7 @@ wget -qO- https://raw.githubusercontent.com/ly525/luban-h5/dev/deploy/ubuntu-ins
 ### 🔗生态
 | 后端集成                                                                                           | 官方组件库                                                     | 支撑/辅助组件                                            | 自定义组件                                                             | RoadMap                                                    |
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------|----------------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------------|
-| [Strapi.js (官方后端API)](/luban-h5/tree/dev/back-end/h5-api)                                      | [轮播图](https://github.com/luban-h5-components/lbp-slide)   | 图片库                                                | [自定义组件开发脚手架](https://github.com/luban-h5/vue-cli-plugin-lbhc)     | [RoadMap/开发计划](https://github.com/ly525/luban-h5/projects) |
+| [Strapi.js (官方后端API)](http://localhost:8081/luban-h5/zh/ecosystem/#%E9%B2%81%E7%8F%ADh5%E7%94%9F%E6%80%81%E5%BB%BA%E8%AE%BE)                                      | [轮播图](https://github.com/luban-h5-components/lbp-slide)   | 图片库                                                | [自定义组件开发脚手架](https://github.com/luban-h5/vue-cli-plugin-lbhc)     | [RoadMap/开发计划](https://github.com/ly525/luban-h5/projects) |
 | [SpringBoot2-JPA](https://github.com/luban-h5/spring-boot-api-for-editor)                      | [普通按钮](https://github.com/luban-h5-components/lbc-button) | [文本对齐](https://github.com/luban-h5/lbs-text-align) | [自定义组件开发教程](https://github.com/luban-h5/vue-cli-plugin-lbhc/wiki) |                                                            |
 | [SpringBoot2-Mybatis-plus](https://github.com/luban-h5/springboot2-mybatis-plus-api-for-luban) |                                          |                                                    | 视频教程(WIP)                                                         |                                                            |
 
@@ -108,56 +110,22 @@ wget -qO- https://raw.githubusercontent.com/ly525/luban-h5/dev/deploy/ubuntu-ins
 |---|---|---|
 | <img src="https://user-images.githubusercontent.com/12668546/61447488-a379f700-a983-11e9-9956-139352a2585d.png" width="200" />| <img src="https://user-images.githubusercontent.com/12668546/65471913-ab827580-dea3-11e9-919c-870c9605c60f.png" width="200" />  | <img src="https://user-images.githubusercontent.com/12668546/66585418-5cce1e80-ebb9-11e9-91c0-56f658f09e27.png" width="200" /> <br />请备注：鲁班H5交流|
 
-## 更多细节请阅读[在线文档](https://ly525.github.io/luban-h5)
-
-
-### Features
-1. 编辑器
-    - [x] 参考线
-    - [x] 吸附线、组件对齐
-    - [x] 拖拽改变组件形状
-    - [x] 元素: 复制（画布）
-    - [x] 元素: 删除（画布）
-    - [x] 元素: 编辑（画布）
-    - [x] 页面：新增
-    - [x] 页面：复制
-    - [x] 页面：删除
-    - [x] 快速预览
-    - [x] 撤销、重做
-
-2. 组件系统
-    - [x] 文字
-    - [x] 普通按钮
-    - [x] 表单按钮
-    - [x] 表单输入框
-    - [x] 普通图片
-    - [x] 背景图
-    - [x] 背景音乐
-    - [x] 视频（Iframe形式）
-
-3. 增强功能
-    - [ ] 上传 PSD，一键转换为 H5(已经调研，可以实现)
-    - [x] 图片库
-    - [x] 第三方无版权图片搜索
-    - [ ] 自定义脚本(已经调研，可以实现)
-
-4. 后端 API
-    - [x] 创建、保存、更新作品
-    - [x] 表单数据收集
-    - [x] 表单数据展示
-    - [x] 在线预览
-    - [x] 二维码预览
-
-
-### 更多说明
-#### 前端组件说明
-1. `lbp-` 全称为 `lu-ban-plugin-`, 意思为 `鲁班H5的插件`，位置：`front-end/h5/src/components/plugins`
-
 
 #### 技术栈（当前）
 1. 前端：[Vue.js](https://vuejs.org/v2/guide/)
 2. 后端：[Strapi](https://strapi.io/)
 3. 存储：[Sqlite](https://www.sqlite.org/)
 
-#### 如何贡献
+## 如何贡献
 所有合理的改动、优化、修正，新的组件，或者文档的修正、更新 相关的提交都会被接受
+
+## 社区与交流群
+#### 论坛地址：[鲁班H5-社区](https://support.qq.com/products/93432/)
+#### 交流群
+| 钉钉群  | 微信公众号  |  微信 |
+|---|---|---|
+| <img src="https://user-images.githubusercontent.com/12668546/61447488-a379f700-a983-11e9-9956-139352a2585d.png" width="200" />| <img src="https://user-images.githubusercontent.com/12668546/65471913-ab827580-dea3-11e9-919c-870c9605c60f.png" width="200" />  | <img src="https://user-images.githubusercontent.com/12668546/66585418-5cce1e80-ebb9-11e9-91c0-56f658f09e27.png" width="200" /> <br />请备注：鲁班H5交流|
+
+---
+
+> 如果有问题，欢迎大家到[鲁班H5-社区](https://support.qq.com/products/93432/) 交流，在这里可以提问、反馈意见和建议，与作者直接互动
